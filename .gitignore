@@ -1,0 +1,10 @@
+# IDE
+/.idea/
+
+# Gradle
+.gradle/
+build/
+
+# SAM
+.aws-sam/
+samconfig.toml
