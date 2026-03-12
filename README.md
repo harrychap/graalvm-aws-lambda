@@ -37,3 +37,17 @@ sam build --template template-native.yaml
 ```bash
 sam local invoke HelloWorldFunction --event events/event.json
 ```
+
+## Native Runtime — Docker Image
+
+Same GraalVM native binary packaged as a Lambda container image (`provided.al2023-arm64` base). The multi-stage `Dockerfile` compiles the native binary and copies it into the Lambda base image — no separate build step needed.
+
+**Build:**
+```bash
+sam build --template template-native-docker.yaml
+```
+
+**Run locally:**
+```bash
+sam local invoke HelloWorldNativeDockerFunction --event events/event.json
+```
