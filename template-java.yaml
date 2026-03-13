@@ -10,7 +10,7 @@ Resources:
       Handler: org.local.Main::handleRequest
       Runtime: java25
       CodeUri: .
-      MemorySize: 512
+      MemorySize: 128
       Timeout: 30
       Architectures:
         - arm64

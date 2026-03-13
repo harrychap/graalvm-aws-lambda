@@ -6,11 +6,11 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       PackageType: Image
-      MemorySize: 512
+      MemorySize: 128
       Timeout: 30
       Architectures:
         - arm64
     Metadata:
       Dockerfile: Dockerfile
       DockerContext: .
-      DockerTag: native-arm64
+      DockerTag: native-docker
